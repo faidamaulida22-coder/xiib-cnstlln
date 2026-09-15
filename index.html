@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="XIIB CNSTLLN — Digital Class Memory of SMA Al Furqan Jember" />
+  <title>XIIB CNSTLLN | SMA Al Furqan Jember</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#1557C0;--blue2:#08275F;--sky:#EAF2FF;--ink:#0B2147;--muted:#667796;--white:#FFFFFF;--line:#D8E5F7;--shadow:0 22px 70px rgba(8,39,95,.14);--glass:rgba(255,255,255,.78)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#F8FBFF;line-height:1.6}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+    nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,230,245,.8)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.08em;color:var(--blue)}
+    .links{display:flex;gap:24px;font-size:14px;font-weight:600}.links a:hover{color:var(--blue)}
+    .menu{display:none;border:0;background:none;font-size:26px;color:var(--blue)}
+    .hero{min-height:760px;padding-top:72px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#092A66 0%,#1557C0 58%,#7EB2FF 100%)}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.18;background:#fff}.hero:before{width:420px;height:420px;right:-100px;top:-120px}.hero:after{width:280px;height:280px;left:-80px;bottom:-100px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:2;color:white}
+    .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700;opacity:.8}.hero h1{font:700 clamp(54px,9vw,108px)/.95 "Playfair Display",serif;margin:16px 0}.hero p{font-size:20px;max-width:600px;opacity:.9}
+    .btn{display:inline-block;margin-top:22px;padding:13px 20px;border-radius:999px;background:#fff;color:var(--blue);font-weight:800;box-shadow:0 12px 30px rgba(9,42,102,.18)}.btn:hover{transform:translateY(-2px)}
+    .hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:28px;padding:18px;box-shadow:var(--shadow);transform:rotate(2deg)}
+    .photo{min-height:420px;border-radius:20px;background:linear-gradient(135deg,#c9defe,#edf5ff);display:flex;align-items:center;justify-content:center;color:#55709c;text-align:center;padding:30px;font-weight:700}
+    section{padding:100px 0}.section-head{max-width:720px;margin-bottom:45px}.kicker{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:12px}.section-head h2{font:700 48px/1.05 "Playfair Display",serif;margin:10px 0 14px}.section-head p{color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.stat,.card{background:white;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 8px 30px rgba(30,70,130,.05)}.stat strong{font-size:34px;color:var(--blue);display:block}.stat span{color:var(--muted);font-size:13px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.teacher{display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:center}.teacher .photo{min-height:200px}
+    .people{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.person{overflow:hidden;padding:0}.person .avatar{height:220px;background:linear-gradient(135deg,#dbeaff,#f5f9ff);display:flex;align-items:center;justify-content:center;color:#6280ae;font-weight:700}.person .info{padding:18px}.person h3{margin:0;font-size:17px}.role{font-size:12px;color:var(--blue);font-weight:700}
+    .timeline{position:relative;max-width:850px;margin:auto}.timeline:before{content:"";position:absolute;left:19px;top:0;bottom:0;width:2px;background:#cfe0fb}.event{position:relative;padding-left:62px;margin-bottom:38px}.dot{position:absolute;left:9px;top:5px;width:22px;height:22px;border-radius:50%;background:var(--blue);border:5px solid #dbeaff}.event h3{margin:0 0 5px}.event p{margin:0;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery .photo{min-height:220px}.gallery .photo:nth-child(2){min-height:300px}.gallery .photo:nth-child(5){min-height:300px}
+    .achievements{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.icon{font-size:30px}.messages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.quote{font:600 22px/1.35 "Playfair Display",serif}
+    .yearbook{background:linear-gradient(135deg,#0b2f73,#1456c3);color:white;border-radius:32px;padding:55px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.yearbook .page{background:white;color:var(--ink);border-radius:20px;padding:35px;min-height:310px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+    footer{background:#071F4D;color:#dce8ff;padding:55px 0}.foot{display:flex;justify-content:space-between;gap:20px}.small{font-size:13px;opacity:.75}
+    .reveal{opacity:0;transform:translateY(20px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:850px){.links{display:none}.menu{display:block}.hero-grid,.about-grid,.yearbook{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.people{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}.achievements,.messages{grid-template-columns:1fr}.hero{min-height:700px}.hero-card{display:none}.section-head h2{font-size:40px}.teacher{grid-template-columns:110px 1fr}}
+    @media(max-width:520px){section{padding:72px 0}.stats,.people,.gallery{grid-template-columns:1fr}.navin{height:64px}.hero{padding-top:64px}.hero h1{font-size:58px}.hero p{font-size:17px}.yearbook{padding:28px}.foot{flex-direction:column}}
+  
+/* PREMIUM YEARBOOK UPGRADE */
+body{background:radial-gradient(circle at 10% 0%,#eef5ff 0,#f8fbff 30%,#fff 70%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#1557c0 0.7px,transparent .7px);background-size:22px 22px;mask-image:linear-gradient(to bottom,black,transparent 75%);z-index:-1}
+nav{box-shadow:0 8px 30px rgba(8,39,95,.07)}
+.brand{font-size:15px;display:flex;align-items:center;gap:10px}
+.brand:before{content:"✦";font-size:19px}
+.hero{min-height:850px;background:linear-gradient(115deg,#061f50 0%,#0b347f 38%,#1557c0 68%,#8abaff 120%);isolation:isolate}
+.hero:before{width:620px;height:620px;right:-180px;top:-170px;background:linear-gradient(135deg,#fff,transparent);opacity:.16}
+.hero:after{width:420px;height:420px;left:-160px;bottom:-180px;background:#8abaff;opacity:.16}
+.hero-grid{gap:80px}
+.hero h1{letter-spacing:-.045em;text-shadow:0 12px 35px rgba(0,0,0,.2)}
+.hero p{font-weight:500}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(8px)}
+.hero-card{padding:12px;border-radius:34px;transform:rotate(1.5deg);background:rgba(255,255,255,.12);box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.hero-card .photo{min-height:470px;background:linear-gradient(145deg,#dceaff,#fff);border-radius:25px}
+.btn{transition:.25s ease}
+.btn:hover{transform:translateY(-3px) scale(1.01);box-shadow:0 18px 38px rgba(0,0,0,.2)}
+section{position:relative}
+.section-head h2{letter-spacing:-.035em}
+.stat,.card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.stat:hover,.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#c2d7f5}
+.stat{background:linear-gradient(145deg,#fff,#f7faff)}
+.stat strong{font-family:"Playfair Display",serif;font-size:42px}
+.people{grid-template-columns:repeat(5,1fr)}
+.person{position:relative;background:#fff}
+.person .avatar{position:relative;overflow:hidden}
+.person .avatar:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,39,95,.14),transparent 55%);opacity:0;transition:.25s}
+.person:hover .avatar:after{opacity:1}
+.person .info{background:linear-gradient(#fff,#f9fbff)}
+.gallery .photo{position:relative;overflow:hidden;transition:.3s}
+.gallery .photo:hover{transform:scale(1.015);box-shadow:var(--shadow)}
+.gallery .photo:after{content:"↗";position:absolute;right:16px;bottom:14px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.88);color:var(--blue);font-weight:800}
+.timeline:before{background:linear-gradient(#1557c0,#bcd6ff)}
+.dot{box-shadow:0 0 0 7px rgba(21,87,192,.08)}
+.yearbook{position:relative;overflow:hidden;box-shadow:0 30px 90px rgba(8,39,95,.22)}
+.yearbook:after{content:"XIIB";position:absolute;right:-35px;bottom:-90px;font:700 220px/1 "Playfair Display",serif;color:rgba(255,255,255,.06);pointer-events:none}
+.yearbook .page{transform:rotate(1deg);transition:.3s}
+.yearbook .page:hover{transform:rotate(0) translateY(-4px)}
+footer{position:relative;overflow:hidden}
+footer:before{content:"XIIB CNSTLLN";position:absolute;right:-20px;bottom:-55px;font:700 140px/1 "Playfair Display",serif;color:rgba(255,255,255,.035)}
+@media(max-width:1100px){.people{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:850px){.people{grid-template-columns:repeat(2,1fr)}.hero{min-height:760px}}
+@media(max-width:520px){.people{grid-template-columns:1fr 1fr}.hero h1{font-size:55px}.section-head h2{font-size:38px}}
+
+</style>
+<style>@media(max-width:650px){.container> .card[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}.container> .card[style*="grid-template-columns:repeat(3,1fr)"]>div{border-right:0!important;border-bottom:1px solid var(--line)}.container> .card[style*="grid-template-columns:repeat(3,1fr)"]>div:last-child{border-bottom:0}}</style></head>
+<body>
+<nav><div class="container navin">
+  <a class="brand" href="#home">XIIB CNSTLLN</a>
+  <div class="links">
+    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#people">PEOPLE</a><a href="#memories">MEMORIES</a><a href="#journey">JOURNEY</a><a href="#achievements">ACHIEVEMENTS</a><a href="#messages">MESSAGES</a><a href="#yearbook">YEARBOOK</a>
+  </div><button class="menu" onclick="toggleMenu()">☰</button>
+</div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+  <div class="reveal"><div class="eyebrow">SMA AL FURQAN JEMBER • 2026/2028</div>
+    <h1>XIIB<br>CNSTLLN</h1>
+    <p>One class. One journey. A thousand memories.</p>
+    <a class="btn" href="#about">ENTER OUR STORY →</a>
+  </div>
+  <div class="hero-card reveal"><div class="photo">CLASS GROUP PHOTO<br><span class="small">Replace this placeholder with your class photo</span></div></div>
+</div></header>
+
+<div class="container" style="margin-top:-42px;position:relative;z-index:5">
+  <div class="card reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:0;overflow:hidden;background:rgba(255,255,255,.92);backdrop-filter:blur(14px)">
+    <div style="padding:24px;text-align:center;border-right:1px solid var(--line)"><div class="kicker">School</div><strong>SMA AL FURQAN JEMBER</strong></div>
+    <div style="padding:24px;text-align:center;border-right:1px solid var(--line)"><div class="kicker">Class</div><strong>XIIB CNSTLLN</strong></div>
+    <div style="padding:24px;text-align:center"><div class="kicker">Chapter</div><strong>2026 — 2028</strong></div>
+  </div>
+</div>
+
+<section id="about"><div class="container">
+  <div class="section-head reveal"><div class="kicker">About Us</div><h2>More than classmates.</h2><p>We started as students in one classroom. Along the way, lessons, laughter, challenges, and shared moments became part of our story.</p></div>
+  <div class="stats reveal"><div class="stat"><strong>10</strong><span>PUTRA</span></div><div class="stat"><strong>10</strong><span>STUDENTS</span></div><div class="stat"><strong>1</strong><span>CLASS FAMILY</span></div><div class="stat"><strong>2026</strong><span>OUR CHAPTER</span></div></div>
+  <div class="about-grid" style="margin-top:18px">
+    <div class="card teacher reveal"><div class="photo">WALI KELAS<br>PHOTO</div><div><div class="kicker">Class Teacher</div><h3>Faidatun Nurul Maulida, S.Pd</h3><p>“Every class has a story. This is ours.”</p></div></div>
+    <div class="card reveal"><div class="kicker">Class Motto</div><h3>Our motto is waiting to be written.</h3><p>Replace this text with the motto or value that represents XIIB CNSTLLN.</p></div>
+  </div>
+</div></section>
+
+<section id="people" style="background:#EDF4FF"><div class="container">
+  <div class="section-head reveal"><div class="kicker">Our People</div><h2>Meet the constellation.</h2><p>Ten students, different personalities, one class.</p></div>
+  <div class="people">
+    <div class="card person reveal"><div class="avatar">PHOTO 01</div><div class="info"><h3>Iqbal Fathoni</h3><div class="role">KETUA KELAS</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 02</div><div class="info"><h3>Akhmal Hikmah R</h3><div class="role">SEKRETARIS</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 03</div><div class="info"><h3>M. Hafiz Faizul Haq</h3><div class="role">SEKRETARIS</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 04</div><div class="info"><h3>M. Syamlan</h3><div class="role">BENDAHARA</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 05</div><div class="info"><h3>Nama Siswa 05</h3><div class="role">XIIB CNSTLLN</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 06</div><div class="info"><h3>Nama Siswa 06</h3><div class="role">XIIB CNSTLLN</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 07</div><div class="info"><h3>Nama Siswa 07</h3><div class="role">XIIB CNSTLLN</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 08</div><div class="info"><h3>Nama Siswa 08</h3><div class="role">XIIB CNSTLLN</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 09</div><div class="info"><h3>Nama Siswa 09</h3><div class="role">XIIB CNSTLLN</div></div></div>
+    <div class="card person reveal"><div class="avatar">PHOTO 10</div><div class="info"><h3>Nama Siswa 10</h3><div class="role">XIIB CNSTLLN</div></div></div>
+  </div>
+</div></section>
+
+<section id="memories"><div class="container">
+  <div class="section-head reveal"><div class="kicker">Memories</div><h2>Moments we will keep.</h2><p>Replace these placeholders with your favorite class photos.</p></div>
+  <div class="gallery"><div class="photo reveal">MEMORY 01</div><div class="photo reveal">MEMORY 02</div><div class="photo reveal">MEMORY 03</div><div class="photo reveal">MEMORY 04</div><div class="photo reveal">MEMORY 05</div><div class="photo reveal">MEMORY 06</div></div>
+</div></section>
+
+<section id="journey" style="background:#EDF4FF"><div class="container">
+  <div class="section-head reveal"><div class="kicker">Our Journey</div><h2>From the first page to the next chapter.</h2></div>
+  <div class="timeline">
+    <div class="event reveal"><div class="dot"></div><h3>2026 — The Beginning</h3><p>A new chapter begins at SMA Al Furqan Jember. We meet, learn, and start building our class story.</p></div>
+    <div class="event reveal"><div class="dot"></div><h3>2027 — The Journey</h3><p>Add important class events, competitions, trips, celebrations, and unforgettable moments here.</p></div>
+    <div class="event reveal"><div class="dot"></div><h3>2028 — The Final Chapter</h3><p>Our paths may grow in different directions, but the memories of XIIB CNSTLLN remain part of our story.</p></div>
+  </div>
+</div></section>
+
+<section id="achievements"><div class="container">
+  <div class="section-head reveal"><div class="kicker">Achievements</div><h2>Things we are proud of.</h2></div>
+  <div class="achievements">
+    <div class="card reveal"><div class="icon">🏆</div><h3>Class Competition</h3><p>Add your class achievement here.</p></div>
+    <div class="card reveal"><div class="icon">📚</div><h3>Academic</h3><p>Add academic achievements here.</p></div>
+    <div class="card reveal"><div class="icon">⭐</div><h3>Student Achievements</h3><p>Add individual student achievements here.</p></div>
+  </div>
+</div></section>
+
+<section id="messages" style="background:#EDF4FF"><div class="container">
+  <div class="section-head reveal"><div class="kicker">Messages</div><h2>Words from our journey.</h2></div>
+  <div class="messages">
+    <div class="card reveal"><div class="kicker">Wali Kelas</div><p class="quote">“Wherever life takes you, remember the lessons, friendships, and memories you created together.”</p><p>— Faidatun Nurul Maulida, S.Pd</p></div>
+    <div class="card reveal"><div class="kicker">For XIIB</div><p class="quote">“Different dreams, same beautiful memories.”</p></div>
+    <div class="card reveal"><div class="kicker">Class Wall</div><p class="quote">“Started as classmates, grew as a family.”</p></div>
+  </div>
+</div></section>
+
+<section id="yearbook"><div class="container">
+  <div class="yearbook reveal"><div><div class="eyebrow">Digital Yearbook</div><h2 style="font:700 46px/1.1 'Playfair Display',serif;margin:12px 0">Open the pages of our story.</h2><p>Use this section as the digital yearbook of XIIB CNSTLLN. Add photos, profiles, memories, and messages.</p><a class="btn" href="#memories">VIEW MEMORIES →</a></div>
+    <div class="page"><div class="kicker">PAGE 01</div><h2>XIIB CNSTLLN</h2><p>SMA Al Furqan Jember<br>2026/2028</p><p class="small">“One Class. One Journey. A Thousand Memories.”</p></div>
+  </div>
+</div></section>
+
+<section><div class="container" style="text-align:center"><div class="section-head reveal" style="margin:0 auto"><div class="kicker">Our Future</div><h2>See you in the next chapter.</h2><p>Today we are classmates. Tomorrow we will follow different dreams and different paths. But this chapter will always be part of our story.</p></div></div></section>
+
+<footer><div class="container foot"><div><strong>XIIB CNSTLLN</strong><div class="small">SMA Al Furqan Jember • 2026/2028</div></div><div class="small">© 2026 XIIB CNSTLLN — All Memories Reserved</div></div></footer>
+
+<script>
+function toggleMenu(){const l=document.querySelector('.links');l.style.display=l.style.display==='flex'?'none':'flex';l.style.position='absolute';l.style.top='64px';l.style.left='0';l.style.right='0';l.style.padding='20px';l.style.background='white';l.style.flexDirection='column'}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+</script>
+</body>
+</html>
